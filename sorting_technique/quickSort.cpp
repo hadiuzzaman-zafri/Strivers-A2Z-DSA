@@ -2,14 +2,14 @@
 using namespace std;
 
 int partition(int arr[], int low, int high) {
-    int pivot = low;
+    int pivot = arr[low];
     int i = low;
     int j = high;
-    while(i<j) {
-        while(arr[low] <= arr[pivot] && i < high - 1) {
+    while(i < j) {
+        while(arr[i] <= pivot && i <= high - 1) {
             i++;
         }
-        while(arr[j] > arr[pivot] && j >= low + 1) {
+        while(arr[j] > pivot && j >= low + 1) {
             j--;
         }
         if(i < j) {
@@ -28,9 +28,7 @@ void qs(int arr[], int low, int high) {
         qs(arr,low,pIndex-1);
         qs(arr,pIndex+1,high);
     }
-    for(int j = 0;j<=high;j++){
-        cout<<arr[j]<<" ";
-    }
+    
 }
 
 
@@ -41,7 +39,10 @@ int main(){
     for(int i = 0 ; i < n ; i++) {
         cin>>arr[i];
     }
-    qs(arr,0,n);
+    qs(arr,0,n - 1);
+    for(int j = 0;j < n;j++){
+        cout<<arr[j]<<" ";
+    }
 
 
     return 0;
