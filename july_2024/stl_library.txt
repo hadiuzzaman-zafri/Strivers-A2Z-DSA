@@ -1,0 +1,55 @@
+----------------------------- Start of "unordered_set" STL Library --------------------------------
+
+/*
+                unordered_set
+    1. stores unique element in no perticular order 
+    2. every operation in Avearage Case O(1)
+    3. every operation in Worst Case O(n)
+
+    4. begin() - return an iterator pointing to the first element in the unordered set.
+    5. end() - returns an iterator to the theoretical element after the last element.
+    6. s.count(2) - it returns 1 if the element 2 is present in the container otherwise 0.
+    7. erase() - to delete a single element or elements between a particular range
+    8. size() - returns the size of the unordered set.
+    9. empty() - to check if the unordered set is empty or not.
+    10. clear() - clear all the element from the set
+*/
+
+    unordered_set<int> s;
+    s.insert(1);
+    s.insert(2);
+    if(s.find(2)!=s.end()) {
+        cout<<"true"<<endl;
+    }
+    cout << s.size();
+    s.clear();
+
+----------------------------- End of "unordered_set" STL Library --------------------------------
+
+//----------------------------- Start of "vector" STL Library --------------------------------
+
+/*
+                vector
+    1. Vectors is a dynamic arrays change size when elements are added or deleted from them. 
+    2. Vector elements can be easily accessed and traversed using iterators. 
+    3. A vector stores elements in contiguous memory locations.
+
+    4. begin() - it returns an iterator pointing to the first element of the vector.
+    5. end() - it returns an iterator pointing to the element after the last element of the vector.
+    6. push_back() - it accepts a parameter and insert the element at the end
+    7. insert(position, element) - it is used to insert an element at a specified position.
+    8. erase() - it is used to delete a specific element
+    9. pop_back() - it deletes the last element and returns it to the calling function
+    10. front() - it returns a reference to the first element of the vector
+    11. back() - it returns a reference to the last element of the vector.
+    12. clear() - deletes all the elements from the vector.
+    13. empty() - to check if the vector is empty or not.
+    14. size() - returns the size of the vector
+
+*/
+
+vector<int> v1;
+vector<char> v2;
+vector<string> v3;
+
+//----------------------------- End of "vector" STL Library --------------------------------
