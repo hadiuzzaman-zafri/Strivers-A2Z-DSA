@@ -1,12 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main() {
-
-    int i = 0;
-    int j = -1;
-    if( 6 > 5) {
-        j = max(i,j);
-    }
-    cout<< j;
+    int ch = 'A';
+    // cout << "zafri is here, how you, aSalamuAlikum, howare you";
+    cout << ch;
     return 0;
 }
